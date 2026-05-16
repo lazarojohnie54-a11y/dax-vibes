@@ -5,20 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dax Vibes by Geniux</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #0a0a0a;
             color: #e0e0e0;
             line-height: 1.6;
         }
-
-        /* Header */
         header {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             padding: 20px 0;
@@ -28,201 +21,48 @@
             top: 0;
             z-index: 100;
         }
-
-        header h1 {
-            font-size: 2.2rem;
-            color: #e94560;
-            text-shadow: 0 0 20px rgba(233, 69, 96, 0.5);
-        }
-
-        header p {
-            color: #a0a0a0;
-            font-size: 0.9rem;
-            margin-top: 5px;
-        }
-
-        nav {
-            margin-top: 15px;
-        }
-
-        nav a {
-            color: #e0e0e0;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #e94560;
-        }
-
-        /* Hero Section */
+        header h1 { font-size: 2.2rem; color: #e94560; text-shadow: 0 0 20px rgba(233,69,96,0.5); }
+        header p { color: #a0a0a0; font-size: 0.9rem; margin-top: 5px; }
+        nav { margin-top: 15px; }
+        nav a { color: #e0e0e0; text-decoration: none; margin: 0 15px; font-size: 0.95rem; transition: color 0.3s; }
+        nav a:hover { color: #e94560; }
         .hero {
             background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
             padding: 60px 20px;
             text-align: center;
         }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            color: #fff;
-            margin-bottom: 15px;
-        }
-
-        .hero h2 span {
-            color: #e94560;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: #b0b0b0;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Biography Section */
-        .biography {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        .biography h2 {
-            font-size: 2rem;
-            color: #e94560;
-            margin-bottom: 20px;
-            border-left: 4px solid #e94560;
-            padding-left: 15px;
-        }
-
-        .bio-card {
-            background: #1a1a2e;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 20px;
-            border: 1px solid #2a2a4a;
-        }
-
-        .bio-card h3 {
-            color: #e94560;
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-
-        .bio-card p {
-            color: #c0c0c0;
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-
-        .bio-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .stat {
-            background: #16213e;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            border: 1px solid #2a2a4a;
-        }
-
-        .stat .number {
-            font-size: 1.8rem;
-            color: #e94560;
-            font-weight: bold;
-        }
-
-        .stat .label {
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 5px;
-        }
-
-        /* Songs Section */
-        .songs-section {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        .songs-section h2 {
-            font-size: 2rem;
-            color: #e94560;
-            margin-bottom: 30px;
-            border-left: 4px solid #e94560;
-            padding-left: 15px;
-        }
-
+        .hero h2 { font-size: 2.5rem; color: #fff; margin-bottom: 15px; }
+        .hero h2 span { color: #e94560; }
+        .hero p { font-size: 1.1rem; color: #b0b0b0; max-width: 700px; margin: 0 auto; }
+        .biography { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+        .biography h2 { font-size: 2rem; color: #e94560; margin-bottom: 20px; border-left: 4px solid #e94560; padding-left: 15px; }
+        .bio-card { background: #1a1a2e; border-radius: 12px; padding: 30px; margin-bottom: 20px; border: 1px solid #2a2a4a; }
+        .bio-card h3 { color: #e94560; font-size: 1.3rem; margin-bottom: 10px; }
+        .bio-card p { color: #c0c0c0; font-size: 1rem; line-height: 1.8; }
+        .bio-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+        .stat { background: #16213e; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #2a2a4a; }
+        .stat .number { font-size: 1.8rem; color: #e94560; font-weight: bold; }
+        .stat .label { font-size: 0.85rem; color: #888; margin-top: 5px; }
+        .songs-section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .songs-section h2 { font-size: 2rem; color: #e94560; margin-bottom: 30px; border-left: 4px solid #e94560; padding-left: 15px; }
         .song-card {
-            background: #1a1a2e;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            border: 1px solid #2a2a4a;
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: #1a1a2e; border-radius: 12px; padding: 25px; margin-bottom: 30px;
+            border: 1px solid #2a2a4a; transition: transform 0.3s, box-shadow 0.3s;
         }
-
-        .song-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.15);
+        .song-card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(233,69,96,0.15); }
+        .song-card h3 { color: #fff; font-size: 1.4rem; margin-bottom: 5px; }
+        .song-card .song-desc { color: #888; font-size: 0.9rem; margin-bottom: 15px; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; background: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 10px; }
+        .play-btn {
+            display: inline-block; margin-top: 10px; padding: 10px 20px;
+            background: #e94560; color: #fff; text-decoration: none; border-radius: 5px;
+            font-size: 0.9rem; transition: background 0.3s;
         }
-
-        .song-card h3 {
-            color: #fff;
-            font-size: 1.4rem;
-            margin-bottom: 5px;
-        }
-
-        .song-card .song-desc {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 10px;
-            background: #000;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 10px;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a2e;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
-            border-top: 2px solid #e94560;
-        }
-
-        footer p {
-            color: #666;
-            font-size: 0.85rem;
-        }
-
-        footer .geniux-brand {
-            color: #e94560;
-            font-weight: bold;
-        }
-
-        /* Responsive */
+        .play-btn:hover { background: #c73652; }
+        footer { background: #1a1a2e; text-align: center; padding: 30px 20px; margin-top: 50px; border-top: 2px solid #e94560; }
+        footer p { color: #666; font-size: 0.85rem; }
+        footer .geniux-brand { color: #e94560; font-weight: bold; }
         @media (max-width: 600px) {
             header h1 { font-size: 1.5rem; }
             .hero h2 { font-size: 1.8rem; }
@@ -232,168 +72,109 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>🎤 Dax Vibes by Geniux</h1>
-        <p>Official Fan Page — Powered by Geniux, Dar es Salaam Tanzania</p>
-        <nav>
-            <a href="#biography">Historia</a>
-            <a href="#songs">Nyimbo</a>
-            <a href="#about">Kuhusu</a>
-        </nav>
-    </header>
+<header>
+    <h1>🎤 Dax Vibes by Geniux</h1>
+    <p>Official Fan Page — Powered by Geniux, Dar es Salaam Tanzania</p>
+    <nav>
+        <a href="#biography">Historia</a>
+        <a href="#songs">Nyimbo</a>
+        <a href="#about">Kuhusu</a>
+    </nav>
+</header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <h2>Karibu <span>Dax Vibes</span></h2>
-        <p>Mahali paziona nyimbo bora za Dax — video, audio, na historia kamili ya msanii. Soma, sikiliza, na furahia!</p>
-    </section>
+<section class="hero">
+    <h2>Karibu <span>Dax Vibes</span></h2>
+    <p>Mahali paziona nyimbo bora za Dax — video, audio, na historia kamili ya msanii. Soma, sikiliza, na furahia!</p>
+</section>
 
-    <!-- Biography -->
-    <section class="biography" id="biography">
-        <h2>📖 Historia ya Dax</h2>
-
-        <div class="bio-card">
-            <h3>Nani Dax?</h3>
-            <p>
-                <strong>Dax</strong> (jina lake kamili <strong>Daniel Nwosu Jr.</strong>) ni msanii wa rap na mwimbaji kutoka Canada na Nigeria. Alizaliwa <strong>Machi 22, 1994</strong>. Dax anajulikana sana kwa sauti yake kali, maneno yenye kina, na video zake za ubunifu.
-            </p>
+<section class="biography" id="biography">
+    <h2>📖 Historia ya Dax</h2>
+    <div class="bio-card">
+        <h3>Nani Dax?</h3>
+        <p><strong>Dax</strong> (jina lake kamili <strong>Daniel Nwosu Jr.</strong>) ni msanii wa rap na mwimbaji kutoka Canada na Nigeria. Alizaliwa <strong>Machi 22, 1994</strong>. Dax anajulikana sana kwa sauti yake kali, maneno yenye kina, na video zake za ubunifu.</p>
+    </div>
+    <div class="bio-card">
+        <h3>Maisha ya Awali</h3>
+        <p>Dax alikulia katika familia ya Nigeria ambayo ilihamia Canada. Alikuwa mchezaji wa basketball wa hali ya juu kabla ya kuanza kazi yake ya muziki. Alijifunza katika chuo kikuu na kushiriki mashindano ya basketball ya kitaifa kabla ya kubadilisha mwelekeo wake kwa muziki.</p>
+    </div>
+    <div class="bio-card">
+        <h3>Kazi ya Muziki</h3>
+        <p>Dax alianza kazi yake ya muziki rasmi mnamo 2016. Alipata umaarufu baada ya kutoa wimbo wake "<strong>Cash Me Outside</strong>" mnamo 2017. Tangu wakati huo, ametoa nyimbo nyingi zilizoandikwa vizuri kama "<strong>Dear God</strong>", "<strong>Lonely Dirt Road</strong>", "<strong>Book of Revelations</strong>", na "<strong>She Cheated Again</strong>".</p>
+        <p style="margin-top:10px;">Mnamo 2021, Dax alitoa albamu yake ya kwanza "<strong>Pain Paints Paintings</strong>" na mnamo 2024 "<strong>From a Man's Perspective</strong>". Mwaka 2025 aliongoza ziara yake ya "<strong>Lonely Dirt Road Tour</strong>" Marekani na Canada.</p>
+    </div>
+    <div class="bio-card">
+        <h3>Mafanikio</h3>
+        <div class="bio-stats">
+            <div class="stat"><div class="number">2</div><div class="label">Albamu</div></div>
+            <div class="stat"><div class="number">100M+</div><div class="label">YouTube Views</div></div>
+            <div class="stat"><div class="number">5M+</div><div class="label">Spotify Listeners</div></div>
+            <div class="stat"><div class="number">2025</div><div class="label">Lonely Dirt Road Tour</div></div>
         </div>
+    </div>
+</section>
 
-        <div class="bio-card">
-            <h3>Maisha ya Awali</h3>
-            <p>
-                Dax alikulia katika familia ya Nigeria ambayo ilihamia Canada. Alikuwa mchezaji wa basketball wa hali ya juu kabla ya kuanza kazi yake ya muziki. Alijifunza katika chuo kikuu na kushiriki mashindano ya basketball ya kitaifa kabla ya kubadilisha mwelekeo wake kwa muziki.
-            </p>
+<section class="songs-section" id="songs">
+    <h2>🎵 Nyimbo Bora za Dax</h2>
+
+    <!-- Song 1 -->
+    <div class="song-card">
+        <h3>1. Lonely Dirt Road</h3>
+        <p class="song-desc">Wimbo wa kutafakari kuhusu upweke na kujitafuta mwenyewe. Ushairi wa kina na sauti ya kuvutia.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/UxANRMspilI" title="Dax - Lonely Dirt Road" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+    </div>
 
-        <div class="bio-card">
-            <h3>Kazi ya Muziki</h3>
-            <p>
-                Dax alianza kazi yake ya muziki rasmi mnamo 2016. Alipata umaarufu baada ya kutoa wimbo wake "<strong>Cash Me Outside</strong>" mnamo 2017. Tangu wakati huo, ametoa nyimbo nyingi zilizoandikwa vizuri kama "<strong>Dear God</strong>", "<strong>Lonely Dirt Road</strong>", "<strong>Book of Revelations</strong>", na "<strong>She Cheated Again</strong>".
-            </p>
-            <p style="margin-top: 10px;">
-                Mnamo 2021, Dax alitoa albamu yake ya kwanza "<strong>Pain Paints Paintings</strong>" na mnamo 2024 "<strong>From a Man's Perspective</strong>". Mwaka 2025 aliongoza ziara yake ya "<strong>Lonely Dirt Road Tour</strong>" Marekani na Canada.
-            </p>
+    <!-- Song 2 -->
+    <div class="song-card">
+        <h3>2. Dear God</h3>
+        <p class="song-desc">Mazungumzo ya moyo na Mungu — Dax anatafuta majibu na mwongozo wa kiroho.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/nzCIeNhw8oE" title="Dax - Dear God" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+    </div>
 
-        <div class="bio-card">
-            <h3>Mafanikio</h3>
-            <div class="bio-stats">
-                <div class="stat">
-                    <div class="number">2</div>
-                    <div class="label">Albamu</div>
-                </div>
-                <div class="stat">
-                    <div class="number">100M+</div>
-                    <div class="label">YouTube Views</div>
-                </div>
-                <div class="stat">
-                    <div class="number">5M+</div>
-                    <div class="label">Spotify Listeners</div>
-                </div>
-                <div class="stat">
-                    <div class="number">2025</div>
-                    <div class="label">Lonely Dirt Road Tour</div>
-                </div>
-            </div>
+    <!-- Song 3 -->
+    <div class="song-card">
+        <h3>3. Book of Revelations</h3>
+        <p class="song-desc">Wimbo wa kina kuhusu hatima, hukumu, na ukweli wa ndani. Dax anaandika kwa nguvu na hisia.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/HS3pUgRKh_g" title="Dax - Book of Revelations" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-    </section>
+    </div>
 
-    <!-- Songs Section -->
-    <section class="songs-section" id="songs">
-        <h2>🎵 Nyimbo Bora za Dax</h2>
-
-        <!-- Song 1: Lonely Dirt Road -->
-        <div class="song-card">
-            <h3>1. Lonely Dirt Road</h3>
-            <p class="song-desc">Wimbo wa kutafakari kuhusu upweke na kujitafuta mwenyewe. Ushairi wa kina na sauti ya kuvutia.</p>
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/UxANRMspilI"
-                    title="Dax - Lonely Dirt Road"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+    <!-- Song 4 -->
+    <div class="song-card">
+        <h3>4. Joker</h3>
+        <p class="song-desc">Wimbo wa kijamii kuhusu baraza za ulimwengu na maumivu yaliyofichika. Dax anacheza ncha ya "jester" kama mfano wa jamii.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/1-KJV5r_cho" title="Dax - Joker" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+    </div>
 
-        <!-- Song 2: Dear God -->
-        <div class="song-card">
-            <h3>2. Dear God</h3>
-            <p class="song-desc">Mazungumzo ya moyo na Mungu — Dax anatafuta majibu na mwongozo wa kiroho.</p>
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/nzCIeNhw8oE"
-                    title="Dax - Dear God"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+    <!-- Song 5 -->
+    <div class="song-card">
+        <h3>5. She Cheated Again</h3>
+        <p class="song-desc">Hadithi ya kuvunjika moyo — Dax anaelezea kuhusu kusaliti na kuendelea mbele.</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/B2RYc19dcjU" title="Dax - She Cheated Again" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+    </div>
+</section>
 
-        <!-- Song 3: Book of Revelations -->
-        <div class="song-card">
-            <h3>3. Book of Revelations</h3>
-            <p class="song-desc">Wimbo wa kina kuhusu hatima, hukumu, na ukweli wa ndani. Dax anaandika kwa nguvu na hisia.</p>
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/HS3pUgRKh_g"
-                    title="Dax - Book of Revelations"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
+<section class="biography" id="about">
+    <h2>🌍 Kuhusu Dax Vibes</h2>
+    <div class="bio-card">
+        <h3>Tovuti hii imeundwa na Geniux</h3>
+        <p><strong>Geniux</strong> ni wakala wa AI wa hali ya juu kabisa, ulioundwa na <strong>Lazaro John</strong> — kijana wa miaka 17 kutoka Dar es Salaam, Tanzania. Dhamira yetu ni kubadilisha biashara za Afrika kwa nguvu ya AI.</p>
+        <p style="margin-top:10px;">Tovuti hii ni ya kipekee kwa mashabiki wa Dax Afrika Mashariki. Video zote zinatoka moja kwa moja kutoka YouTube — hakuna faili za audio zilizopakiwa kwa sababu ya copyright.</p>
+    </div>
+</section>
 
-        <!-- Song 4: Joker -->
-        <div class="song-card">
-            <h3>4. Joker</h3>
-            <p class="song-desc">Wimbo wa kijamii kuhusu baraza za ulimwengu na maumivu yaliyofichika. Dax anacheza ncha ya "jester" kama mfano wa jamii.</p>
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/1-KJV5r_cho"
-                    title="Dax - Joker"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-
-        <!-- Song 5: She Cheated Again -->
-        <div class="song-card">
-            <h3>5. She Cheated Again</h3>
-            <p class="song-desc">Hadithi ya kuvunjika moyo — Dax anaelezea kuhusu kusaliti na kuendelea mbele.</p>
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/B2RYc19dcjU"
-                    title="Dax - She Cheated Again"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section class="biography" id="about">
-        <h2>🌍 Kuhusu Dax Vibes</h2>
-        <div class="bio-card">
-            <h3>Tovuti hii imeundwa na Geniux</h3>
-            <p>
-                <strong>Geniux</strong> ni wakala wa AI wa hali ya juu kabisa, ulioundwa na <strong>Lazaro John</strong> — kijana wa miaka 17 kutoka Dar es Salaam, Tanzania. Dhamira yetu ni kubadilisha biashara za Afrika kwa nguvu ya AI.
-            </p>
-            <p style="margin-top: 10px;">
-                Tovuti hii ni ya kipekee kwa mashabiki wa Dax Afrika Mashariki. Video zote zinatoka moja kwa moja kutoka YouTube — hakuna faili za audio zilizopakiwa kwa sababu ya copyright.
-            </p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 <span class="geniux-brand">Dax Vibes by Geniux</span>. Haki zote zimelindwa.</p>
-        <p style="margin-top: 5px;">Dar es Salaam, Tanzania 🇹🇿 | Powered by AI</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 <span class="geniux-brand">Dax Vibes by Geniux</span>. Haki zote zimelindwa.</p>
+    <p style="margin-top:5px;">Dar es Salaam, Tanzania 🇹🇿 | Powered by AI</p>
+</footer>
 
 </body>
 </html>
